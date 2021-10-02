@@ -20,6 +20,8 @@ or
 npm run build-dev
 ```
 
+Build processes is powered by [esbuild](https://github.com/evanw/esbuild).
+
 ## Run
 
 ```sh
