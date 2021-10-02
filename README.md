@@ -2,6 +2,12 @@
 
 My sample project for TypeScript learning.
 
+## Feature
+
+1. Read from the `dist/source.html` file.
+2. Give a unique ID to the target class.
+3. Write to the `dist/target.html` file.
+
 ## Build
 
 ```sh
