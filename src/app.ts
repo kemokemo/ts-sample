@@ -1,16 +1,13 @@
-console.log('Hello, Typescript!')
+import * as fs from 'fs'
+import * as cheerio from 'cheerio';
 
-let a: number = 3
-let b = a+3
-let c = {
-  apple: a,
-  banana: b
-}
+let htmlData = fs.readFileSync("dist/source.html", "utf-8");
+const $ = cheerio.load(htmlData);
 
-let d = c.apple * 4
-console.log('c.apple * 4 is ' + d)
+$('.myCheck').each((i,elem)=>{
+  $(elem).attr('id', 'myCheck'+(i+1));
+});
+console.log($.html());
 
-function squareOf(n:number) {
-  return n*n
-}
-console.log('squareOf(2) is ' + squareOf(2))
+$('#myCheck2').attr('checked', 'true');
+console.log($.html());
