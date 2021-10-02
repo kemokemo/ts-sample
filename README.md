@@ -5,12 +5,17 @@ My sample project for TypeScript learning.
 ## Build
 
 ```sh
-npx tsc
+npm run build
+```
+
+or
+
+```sh
+npm run build-dev
 ```
 
 ## Run
 
 ```sh
-node ./dist/index.js
+npm run run-dev
 ```
-
